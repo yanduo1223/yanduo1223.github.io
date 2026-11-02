@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yanduo · 个人主页</title>
+  <style>
+    :root {
+      --bg: #ffffff; --fg: #1f2328; --muted: #656d76;
+      --card: #f6f8fa; --line: #d0d7de; --accent: #0969da;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0d1117; --fg: #e6edf3; --muted: #8b949e;
+              --card: #161b22; --line: #30363d; --accent: #58a6ff; }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; padding: 48px 20px; background: var(--bg); color: var(--fg);
+      font-family: -apple-system, "Segoe UI", "Microsoft YaHei", sans-serif;
+      line-height: 1.75; -webkit-font-smoothing: antialiased;
+    }
+    main { max-width: 720px; margin: 0 auto; }
+    h1 { font-size: 32px; margin: 0 0 8px; letter-spacing: -0.5px; }
+    .tagline { color: var(--muted); margin: 0 0 40px; }
+    h2 { font-size: 18px; margin: 36px 0 12px; padding-bottom: 8px;
+         border-bottom: 1px solid var(--line); }
+    ul { padding-left: 20px; margin: 0; }
+    li { margin: 6px 0; }
+    .card { background: var(--card); border: 1px solid var(--line);
+            border-radius: 8px; padding: 16px 20px; }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer { margin-top: 56px; color: var(--muted); font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>你好，我是 Yanduo 👋</h1>
+    <p class="tagline">计算机专业在读 · 正在学习 Java、软件测试与 Git 工作流</p>
+
+    <h2>关于我</h2>
+    <p>关注后端开发与自动化测试，习惯用 JUnit 写测试、用 JaCoCo 看覆盖率，
+       目前在做企业卡报销审批流程与数学表达式评分服务两个练手项目。</p>
+
+    <h2>正在做</h2>
+    <ul>
+      <li>数学表达式评分服务（JUnit + JaCoCo 覆盖率）</li>
+      <li>企业卡报销审批流程</li>
+      <li>个人主页与学习周记维护</li>
+    </ul>
+
+    <h2>技术栈</h2>
+    <div class="card">Java · JUnit · Maven · Git · SQL</div>
+
+    <h2>联系我</h2>
+    <ul>
+      <li>GitHub：<a href="https://github.com/yanduo1223">@yanduo1223</a></li>
+      
+    </ul>
+
+    <footer>© 2026 Yanduo · 由 GitHub Pages 托管</footer>
+  </main>
+</body>
+</html>
